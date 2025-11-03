@@ -1,10 +1,24 @@
 {
-  "name": "${PROJECT_NAME}",
+  "name": "ukr-test-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Ukr test bot",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
-  "private": true
+  "keywords": [
+    "telegram-bot"
+  ],
+  "author": "Дмитрий Гулак",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.13.1",
+    "dotenv": "^17.2.3",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
 }
